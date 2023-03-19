@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lej en bil | Solbiler ApS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/minstil.css">
+</head>
+
+<body class="wrapper">
+
+    <section class="hoved_sektion">
+        <div class="sidehoved">
+            <a href="./index.html"><img class="logo" src="./logo/logo-nyt.png" alt="solbiler logo"></a>
+            <!--log ind-->
+            <div class="log-om">
+                <div class="login_symbol"><img src="billeder/person-black-18dp.svg" alt="Person symbol"><button
+                    onclick="openModal()">Log In</button>
+
+                <div id="login-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>Login</h2>
+                        <form>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+
+                            <button type="submit" class="login-btn">Log In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--log ind slut-->
+            <div>
+                <a class="omos" href="./om-os.html">Om os</a>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="billed_sektion">
+        <section class="forside-wrapper">
+            <section class="forside-tekst">
+                <h1>"Gør din ferie, lidt grønnere"</h1>
+            </section>
+
+
+            <div class="card">
+                <div class="card__inner">
+                    <!--Front card-->
+                    <div class="card__face card__face--front">
+                        <h2>Din bil er lige om hjørnet</h2>
+
+
+                        <img class="tap" src="./iconer/tap.png" alt="">
+                    </div>
+                    <!--Front card slut-->
+
+                    <!--Back card-->
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+
+                            <form id="formular" class="formular" action="" method="">
+                                <h1 class="formular_overskrift">Find bilen som passer dig</h1>
+
+                                <div class="formular_felter">
+                                    <div>
+                                        <label for="afhentning" class="etiket">Jeg henter den</label>
+                                        <input type="date" id="afhentning" required>
+                                    </div>
+
+                                    <div>
+                                        <label for="aflevering" class="etiket">Jeg afleverer den</label>
+                                        <input type="date" id="aflevering" required>
+                                    </div>
+
+                                    <div>
+                                        <label for="personer" class="etiket">Antal personer</label>
+                                        <input type="number" value="1" id="personer" max="7" min="1" required>
+                                    </div>
+
+                                    <div>
+                                        <label for="kufferter" class="etiket">Antal kufferter</label>
+                                        <select id="kufferter">
+                                            <option value="0">0 - kun taske</option>
+                                            <option value="1">1 kuffert</option>
+                                            <option value="2">2 kufferter</option>
+                                            <option value="3">3 kufferter</option>
+                                            <option value="4">4 kufferter</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="formular_knap">
+                                    <button id="knap" class="knap" type="submit">Søg</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--Back card slut-->
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="sek2-baggrund" id="section2">
+        <section class="bil_sektion" id="bil_sektion"></section>
+
+        <template id="skabelon_output">
+            <div class="bil">
+                <img>
+                <div class="bilMM"></div>
+                <div class="bildetaljer">
+                    <div class="kategori">Kategori: </div>
+                    <div class="antalpersoner">Personer: </div>
+                    <div class="antalkufferter">Kufferter: </div>
+                </div>
+                <div class="prisogbook">
+                    <div class="lejeudgift"></div>
+                    <a href="#" class="booknu_knap">Se mere</a>
+                </div>
+            </div>
+        </template>
+    </section>
+
+    <footer class="footer">
+        <img src="./logo/logo-nyt.png" alt="">
+        <section class="footer-info">
+            <p>CVR: 123456678</p> 
+            <p>Tlf: 12345678</p> 
+            <p>Adresse: Solsikkevej 12</p> 
+        </section>
+        <section class="footer-some">
+
+        </section>
+    </footer>
+
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

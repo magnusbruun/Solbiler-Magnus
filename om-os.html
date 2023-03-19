@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lej en bil | Solbiler ApS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/minstil.css">
+</head>
+
+<body class="wrapper">
+
+    <section class="hoved_sektion">
+        <div class="sidehoved">
+            <a href="./index.html"><img class="logo" src="./logo/logo-nyt.png" alt="solbiler logo"></a>
+            <!--log ind-->
+            <div class="log-om">
+                <div class="login_symbol"><img src="billeder/person-black-18dp.svg" alt="Person symbol"><button
+                        onclick="openModal()">Log In</button>
+
+                    <div id="login-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h2>Login</h2>
+                            <form>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required>
+
+                                <button type="submit" class="login-btn">Log In</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--log ind slut-->
+                <div>
+                    <a class="omos" href="./om-os.html">Om os</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="om-os">
+        <section class="omos-billede">
+            <img src="./billeder/om-os.jpg" alt="">
+            <h2>Vi er Solbiler!</h2>
+            <p>Lis og Per, ejerne af et biludlejningsfirma, <br> der fokuserer på udlejning af elbiler til familier,
+                <br> der rejser rundt i Danmark. Vores mission er at give <br> vores kunder en unik og bæredygtig
+                oplevelse på deres rejse <br> rundt i Danmark. Vi tilbyder en bred vifte af elbiler, der passer til alle
+                familiestørrelser og behov, og vores tjenester inkluderer fleksible afhentnings- og afleveringssteder
+                samt forskellige pakker med alt fra GPS-navigation til autostole til børn. <br> Vi er engageret i at
+                reducere miljøpåvirkningen fra vores virksomhed og sørger for at køre vores elbiler på vedvarende energi
+                og bruger genanvendelige materialer i vores bilflåde.</p>
+        </section>
+    </section>
+
+
+    <footer class="footer">
+        <img src="./logo/logo-nyt.png" alt="">
+        <section class="footer-info">
+            <p>CVR: 123456678</p>
+            <p>Tlf: 12345678</p>
+            <p>Adresse: Solsikkevej 12</p>
+        </section>
+        <section class="footer-some">
+
+        </section>
+    </footer>
+
+</body>
+
+</html>

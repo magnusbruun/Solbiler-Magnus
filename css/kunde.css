@@ -1,0 +1,232 @@
+/* Basic CSS reset */
+:root {
+    --primary: #74B36B;
+    --secondary: #F5F5F5;
+    --third: #ffa230;
+    --dark: #212121;
+    --light: #f3f3f3;
+}
+
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+/*header*/
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.login_sektion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.login_symbol {
+    margin-right: 5px;
+}
+
+.sidehoved {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.logo {
+    width: 130px;
+    margin-left: 0px;
+}
+
+.login_symbol {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--primary);
+    transition: all .3s ease-in-out;
+    color: white;
+    font-weight: 600;
+}
+
+.login_symbol img {
+    padding-right: 8px;
+}
+
+.login_symbol:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+/*header slut*/
+
+.kunde-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 20px;
+}
+
+.kunde-img h1 {
+    position: absolute;
+    font-size: 40px;
+    color: var(--secondary);
+    background-color: var(--primary);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-style: italic;
+}
+
+.kunde-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hovedindhold {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lejeoplysninger {
+    background-color: var(--primary);
+    width: 500px;
+    padding: 25px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.udstyrssektion {
+    max-width: 700px;
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formular {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formular label {
+    margin-top: 20px;
+}
+
+.formular input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formular-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 5px 0 0;
+}
+
+.checkboks {
+    margin-top: 10px;
+}
+
+.flexsektion {
+    width: 275px;
+    margin: 25px;
+    border-radius: 8px;
+}
+
+.formfelt {
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.overskrift {
+    text-align: center;
+}
+
+.videreknap {
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 8rem;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.totaldkk {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.totalindhold {
+    padding: 10px;
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.formfelt {
+    width: 275px
+}
+
+#postnr {
+    width: 100px;
+}
+
+/*footer*/
+.footer img {
+    width: 100px;
+}
+
+.footer {
+    margin-top: 80px;
+    padding-top: 20px;
+    background: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    line-height: 25px;
+}
